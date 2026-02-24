@@ -1,6 +1,3 @@
-#include <iostream>
-using namespace std;
-
 template <class T>
 class clsDblLinkedList
 {
@@ -64,6 +61,7 @@ public:
 
     void InsertAfter(Node* current, T value) 
     {
+
         Node* newNode = new Node();
         newNode->value = value;
         newNode->next = current->next;
@@ -133,7 +131,6 @@ public:
 
     void DeleteLastNode() 
     {
-
         if (head == NULL) {
             return;
         }
@@ -344,4 +341,3 @@ int main()
 
     return 0;
 }
-
